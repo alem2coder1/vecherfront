@@ -1,0 +1,157 @@
+body {
+    background-color: #fff;
+}
+
+.vercher-fulid {
+    -webkit-box-shadow: 0px 4px 7px -3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 4px 7px -3px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 4px 7px -3px rgba(34, 60, 80, 0.2);
+}
+
+.vercher-nav {
+    background-color: #fff !important;
+    box-shadow: none !important;
+}
+
+.nav-underline .nav-item :focus,
+.nav-underline .nav-item :hover {
+
+    border-color: transparent transparent #1abc9c transparent;
+}
+
+.vercher-nav .nav-tabs {
+    border-bottom: none;
+}
+
+.vercher-rate {
+    color: #1abc9c;
+}
+
+
+
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: 1abc9c !important;
+    color: #fff !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:hover {
+    background-color: #1abc9c !important;
+}
+
+.navbar-nav {
+    flex-direction: row !important;
+}
+
+.vercher-hr {
+    border-left: 2px solid #eeeeee;
+    height: 25px;
+}
+
+#fluidModalLeftInfoDemo .list-group-item {
+    border: none !important;
+    ;
+}
+
+#fluidModalLeftInfoDemo .list-group-item a {
+    color: #434343 !important;
+}
+
+
+#fluidModalLeftInfoDemo .dropdown-menu {
+    border: none !important;
+    ;
+}
+
+
+
+
+
+@media (min-width: 576px) {
+
+    .container,
+    .container-sm {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px;
+    }
+}
+
+@media (min-width:993px) and (max-width: 1199px) {
+    .vecher-plnchet {
+        display: none !important;
+    }
+
+    .vercher-hr {
+        margin: 0 10px;
+    }
+
+    .vecher-nav-plnchet {
+        display: none !important;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px;
+    }
+
+    .vercher-hr {
+        margin: 0 15px;
+    }
+}
+
+@media (min-width:1201px) and (max-width: 1399px) {
+    .vecher-nav-plnchet {
+        display: none !important;
+    }
+
+    .vercher-hr {
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1320px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .vercher-hr {
+        margin: 0 30px;
+    }
+
+
+}

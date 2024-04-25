@@ -8,60 +8,198 @@
 
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/default.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/ia-light.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/all.css">
+
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown link
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+    <!-- header start -->
+    <header class="container-fulid vercher-fulid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light vercher-nav container">
+            <a class="navbar-brand vercher-icon d-md-none d-lg-block" href="#">
+                <img src="image/vechericon.svg" alt="">
+            </a>
+            <div type="button" class="d-block d-md-none" data-toggle="modal" data-target="#fluidModalLeftInfoDemo"><i
+                    class="fa-solid fa-bars"></i></div>
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse d-md-block" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mx-auto nav-underline nav-tabs">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Алматы</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Экономика</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="nav-contact-tab" data-toggle="tab" data-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Политика</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="nav-contact-tab" data-toggle="tab" data-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Культура</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="nav-contact-tab" data-toggle="tab" data-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Эксклюзив</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="nav-contact-tab" data-toggle="tab" data-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Районы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="nav-contact-tab" data-toggle="tab" data-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Мир</a>
+                    </li>
+                    <li class="nav-item d-md-block d-lg-none">
+                        <a href="#" class="nav-link" id="nav-contact-tab" data-toggle="tab" data-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                            <div class="vercher-weather d-md-block d-lg-none">
+                                <span>Алматы</span>
+                                <span>17.3°</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="vercher-hr d-md-none d-lg-block vecher-nav-plnchet"></div>
+                <div class="exchange-rate d-flex d-md-none d-lg-flex vecher-nav-plnchet">
+                    <div class="d-flex px-1">
+                        <span class="vercher-rate">$</span>
+                        <span class="pl-1">443.85</span>
+                    </div>
+                    <div class="d-flex px-1">
+                        <span class="vercher-rate">€</span>
+                        <span class="pl-1">443.85</span>
+                    </div>
+                    <div class="d-flex px-1 ">
+                        <span class="vercher-rate">₽</span>
+                        <span class="pl-1">443.85</span>
                     </div>
                 </div>
-            </nav>
-        </header>
 
+                <div class="vercher-hr d-md-none d-lg-block vecher-plnchet"></div>
+                <div class="vercher-weather d-md-none d-lg-block">
+                    <span>Алматы</span>
+                    <span>17.3°</span>
+                </div>
+                <ul class="navbar-nav d-md-none d-lg-block vecher-nav-plnchet">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Еще
+                        </a>
+                        <div class="dropdown-menu">
+
+                            <a class="dropdown-item" href="#"> <i
+                                    class="fa-solid fa-check pr-1 vercher-nav-check d-none"></i>Астана
+                                0.9°</a>
+                            <a class="dropdown-item" href="#"> <i
+                                    class="fa-solid fa-check vercher-nav-check pr-1 d-none"></i>Шымкент
+                                20.1° </a>
+                            <a class="dropdown-item" href="#"> <i
+                                    class="fa-solid fa-check vercher-nav-check pr-1 d-none"></i>Актау
+                                13.6°</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <div class="modal fade left" id="fluidModalLeftInfoDemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog modal-full-height modal-left modal-notify modal-info" role="document">
+            <!-- Content -->
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-header">
+                    <p class="heading lead">Modal Succes</p>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <ul class="list-group z-depth-0 ">
+                        <li class="list-group-item justify-content-between py-0">
+                            <a href="#" class="nav-link" id="nav-profile-tab" data-toggle="tab"
+                                data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">Главная</a>
+                        </li>
+                        <li class="list-group-item justify-content-between py-0">
+                            <a href="#" class="nav-link" id="nav-profile-tab" data-toggle="tab"
+                                data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">Контакты</a>
+
+                        </li>
+                        <li class="list-group-item justify-content-between">
+                            <ul class="navbar-nav d-md-none d-lg-block vecher-nav-plnchet">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="collapse"
+                                        data-target="#dropdownMenu" aria-expanded="false" aria-controls="dropdownMenu">
+                                        Еще
+                                    </a>
+                                    <div class="dropdown-menu collapse" id="dropdownMenu">
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fa-solid fa-check pr-1 vercher-nav-check d-none"></i>Астана 0.9°
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fa-solid fa-check vercher-nav-check pr-1 d-none"></i>Шымкент 20.1°
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fa-solid fa-check vercher-nav-check pr-1 d-none"></i>Актау 13.6°
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                        </li>
+                        <li class="list-group-item justify-content-between">
+
+                        </li>
+                        <li class="list-group-item justify-content-between">
+
+                        </li>
+                        <li class="list-group-item justify-content-between">
+
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer justify-content-center">
+                    <a type="button" class="btn btn-info">Get it now <i class="far fa-gem ml-1"></i></a>
+                    <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">No, thanks</a>
+                </div>
+            </div>
+            <!-- Content -->
+        </div>
     </div>
 
 
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mdb.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/anime.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/mian.js"></script>
 </body>
 
