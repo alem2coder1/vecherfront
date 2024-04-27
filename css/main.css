@@ -2,6 +2,7 @@ body {
     background-color: #fff;
 }
 
+/* header start */
 .vercher-fulid {
     -webkit-box-shadow: 0px 4px 7px -3px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 4px 7px -3px rgba(34, 60, 80, 0.2);
@@ -27,18 +28,29 @@ body {
     color: #1abc9c;
 }
 
+.header-text-font {
+    color: #222;
+    display: block;
+    font-size: 1.15rem;
+    font-weight: 500;
+    height: 100%;
+    text-decoration: none;
+    font-family: Roboto, Arial, sans-serif;
+}
 
 
 
-.dropdown-item.active,
-.dropdown-item:active {
-    background-color: 1abc9c !important;
+
+.vercher-nav .dropdown-item.active,
+.vercher-nav .dropdown-item:hover {
+    background-color: #1abc9c !important;
     color: #fff !important;
 }
 
-.dropdown-item.active,
-.dropdown-item:hover {
+#fluidModalLeftInfoDemo .dropdown-item.active,
+#fluidModalLeftInfoDemo .dropdown-item:hover {
     background-color: #1abc9c !important;
+    color: #fff !important;
 }
 
 .navbar-nav {
@@ -46,6 +58,11 @@ body {
 }
 
 .vercher-hr {
+    border-left: 2px solid #eeeeee;
+    height: 25px;
+}
+
+.vercher-hr-2 {
     border-left: 2px solid #eeeeee;
     height: 25px;
 }
@@ -64,6 +81,83 @@ body {
     border: none !important;
     ;
 }
+
+.vecher-telegram-icon {
+    height: 28px;
+    width: 28px;
+    background-color: #1abc9c;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2px;
+}
+
+#fluidModalLeftInfoDemo .btn-outline-primary {
+    color: #1abc9c !important;
+    border: 2px solid #1abc9c !important;
+}
+
+#fluidModalLeftInfoDemo .vecher-xl-input-btn {
+    margin-top: -1px;
+    padding: 9px 28px;
+    box-shadow: none !important;
+    border-radius: 2px;
+}
+
+#fluidModalLeftInfoDemo .form-control:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 0 .2rem rgba(190, 247, 236, .5);
+}
+
+/* header end */
+/* welcome start */
+.vecher-kz .welcome a.vecher-welcome-h1 {
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 115%;
+    color: #000;
+}
+
+.vecher-kz .welcome .vecher-welcome-nsite {
+    color: #adadad;
+    display: inline;
+    font-size: 12px;
+    line-height: 120%;
+}
+
+.vecher-kz .welcome .vecher-welcome-time {
+    font-size: 12px;
+    line-height: 120%;
+    color: #1abc9c;
+}
+
+.vecher-kz .welcome .vecher-welcome-h3 {
+    font-size: 22px !important;
+    line-height: 130% !important;
+    font-weight: 500 !important;
+}
+
+.vecher-kz .welcome .vecher-welcome-hr {
+    height: 2px;
+    background-color: #1abc9c;
+    border-radius: 2px;
+}
+
+/* welcome end */
+/* news start */
+.vecher-kz .vercher-news .vecher-news-time {
+    color: #1abc9c;
+    font-size: 12px;
+}
+
+.vecher-kz .vercher-news .vecher-news-text {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
 
 
 
@@ -84,6 +178,59 @@ body {
     .container-sm {
         max-width: 720px;
     }
+
+
+    #fluidModalLeftInfoDemo {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #fluidModalLeftInfoDemo .nav-text {
+        color: #434343;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: none;
+        text-transform: none;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .vecher-kz .welcome a.vecher-welcome-h1 {
+        font-size: 18px;
+    }
+
+    .vecher-kz .welcome .vecher-welcome-nsite {
+        font-size: 8px;
+    }
+
+    .vecher-kz .welcome .vecher-welcome-time {
+        font-size: 8px;
+    }
+
+    .vecher-kz .welcome .vecher-welcome-h3 {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width:767px) and (max-width: 992px) {
+    .vecher-nav-plnchet {
+        display: none !important;
+    }
+
+    .vercher-weather {
+        display: none !important;
+    }
+
+    .vercher-weather-md {
+        display: flex !important;
+    }
+
+    .vecher-kz .welcome a.vecher-welcome-h1 {
+        font-size: 22px;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -94,19 +241,34 @@ body {
     .container-sm {
         max-width: 960px;
     }
+
+
 }
 
-@media (min-width:993px) and (max-width: 1199px) {
+@media (min-width:992px) and (max-width: 1200px) {
     .vecher-plnchet {
         display: none !important;
     }
 
     .vercher-hr {
+
         margin: 0 10px;
+    }
+
+    .vercher-weather {
+        display: flex !important;
     }
 
     .vecher-nav-plnchet {
         display: none !important;
+    }
+
+    .vercher-hr {
+        display: block !important;
+    }
+
+    .vecher-kz .welcome a.vecher-welcome-h1 {
+        font-size: 28px;
     }
 
 }
@@ -122,6 +284,7 @@ body {
     }
 
     .vercher-hr {
+        display: block !important;
         margin: 0 15px;
     }
 }
@@ -133,6 +296,14 @@ body {
 
     .vercher-hr {
         margin: 0 10px;
+    }
+
+    .vercher-hr-2 {
+        margin: 0 10px;
+    }
+
+    .vercher-weather {
+        display: flex !important;
     }
 }
 
@@ -150,8 +321,14 @@ body {
     }
 
     .vercher-hr {
-        margin: 0 30px;
+        margin: 0 10px;
     }
 
+    .vercher-hr-2 {
+        margin: 0 10px;
+    }
 
+    .vercher-weather {
+        display: flex !important;
+    }
 }
