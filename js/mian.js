@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    const dropdownItems = document.querySelectorAll('.dropdown-item'),
+        maxTitle = document.querySelectorAll('.vercher-max-title');
     dropdownItems.forEach(item => {
         item.addEventListener('click', function () {
             dropdownItems.forEach(item => {
@@ -15,5 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 checkIcon.classList.remove('d-none');
             }
         });
+    });
+    maxTitle.forEach(element => {
+        let text = element.textContent.trim();
+        if (text.length > 200) {
+            text = text.substring(0, 200) + '...';
+        }
+        element.textContent = text;
     });
 });

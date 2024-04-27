@@ -9,10 +9,36 @@ body {
     box-shadow: 0px 4px 7px -3px rgba(34, 60, 80, 0.2);
 }
 
+.nav-holder {
+    height: 70px;
+}
+
 .vercher-nav {
     background-color: #fff !important;
     box-shadow: none !important;
 }
+
+.vecher-a-hover:hover {
+    color: #1abc9c !important;
+}
+
+
+
+.vecher-img-hover a {
+    overflow: hidden;
+    /* 防止图片超出外层div */
+}
+
+.vecher-img-hover a img {
+    transition: transform 0.3s ease;
+    /* 设置过渡效果，0.3秒的缓动效果 */
+}
+
+.vecher-img-hover a img:hover {
+    transform: scale(1.1);
+    /* 当图片被悬停时，放大到原来的1.1倍 */
+}
+
 
 .nav-underline .nav-item :focus,
 .nav-underline .nav-item :hover {
@@ -37,7 +63,6 @@ body {
     text-decoration: none;
     font-family: Roboto, Arial, sans-serif;
 }
-
 
 
 
@@ -119,6 +144,13 @@ body {
     color: #000;
 }
 
+.vecher-kz .welcome a.vecher-welcome-h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000;
+}
+
 .vecher-kz .welcome .vecher-welcome-nsite {
     color: #adadad;
     display: inline;
@@ -130,6 +162,31 @@ body {
     font-size: 12px;
     line-height: 120%;
     color: #1abc9c;
+}
+
+.vecher-kz .welcome .vecher-welcome-time1 {
+    font-size: 12px;
+    line-height: 120%;
+    color: #adadad;
+}
+
+.vecher-kz .welcome .card {
+    box-shadow: none;
+}
+
+.vecher-kz .welcome .card .card-body {
+    padding: 0;
+}
+
+.vecher-kz .welcome .card .card-title {
+    padding: 12px 0;
+    margin-bottom: 0;
+}
+
+.vecher-kz .welcome .card .card-footer {
+    padding: 0;
+    background-color: transparent !important;
+    border-top: 0;
 }
 
 .vecher-kz .welcome .vecher-welcome-h3 {
@@ -158,6 +215,7 @@ body {
     line-height: 24px;
 }
 
+/* news end */
 
 
 
@@ -209,9 +267,28 @@ body {
         font-size: 8px;
     }
 
+    .vecher-kz .welcome .vecher-welcome-time1 {
+        font-size: 8px;
+    }
+
     .vecher-kz .welcome .vecher-welcome-h3 {
         font-size: 16px !important;
+        margin-top: 4px;
     }
+
+    .vecher-kz .vercher-news .vecher-news-text {
+        font-size: 12px;
+    }
+
+    .vecher-kz .vercher-news .vecher-news-time {
+
+        font-size: 12px;
+    }
+
+    .vecher-kz .welcome a.vecher-welcome-h2 {
+        font-size: 14px;
+    }
+
 }
 
 @media (min-width:767px) and (max-width: 992px) {
@@ -229,6 +306,36 @@ body {
 
     .vecher-kz .welcome a.vecher-welcome-h1 {
         font-size: 22px;
+    }
+
+    .vecher-kz .vercher-news .vecher-news-text {
+        font-size: 14px;
+    }
+
+    .vecher-kz .vercher-news .vecher-news-time {
+
+        font-size: 14px;
+    }
+
+    .vecher-kz .welcome a.vecher-welcome-h2 {
+        font-size: 16px;
+    }
+
+    .vecher-kz .welcome .vecher-welcome-time1 {
+        font-size: 10px;
+    }
+
+    .vecher-kz .welcome .vercher-card-right {
+        padding-right: 10px;
+    }
+
+    .vecher-kz .welcome .vercher-card-middle {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .vecher-kz .welcome .vercher-card-left {
+        padding-left: 10px;
     }
 
 }
