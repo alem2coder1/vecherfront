@@ -24,6 +24,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         element.textContent = text;
     });
+    let reactions = document.querySelectorAll('.reaction');
+    let reactionSpan = document.querySelector('.article-reaction-span');
+    reactions.forEach(e => {
+        e.onclick = function () {
+            reactionSpan.classList.remove('d-none');
+            let icon = e.querySelector("i");
+            reactions.forEach(el => {
+                let i = el.querySelector("i");
+                i.classList.remove("fa-solid");
+                i.classList.remove(el.getAttribute("id").toString());
+
+            });
+            icon.classList.toggle(e.getAttribute("id").toString());
+            icon.classList.toggle("fa-solid");
+        }
+    });
 });
 window.addEventListener('scroll', function () {
     var footer = document.querySelector('footer'); // 获取 footer 元素
