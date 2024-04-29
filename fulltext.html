@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <!-- sticky -->
+    <div class="">
+        <header class="container-fulid vercher-fulid mb-3 position-sticky nav-top">
+            <div class=""></div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light vercher-nav container   mt-0">
+                <a class="navbar-brand vercher-icon d-md-none d-lg-block" href="#">
+                    <img src="image/vechericon.svg" alt="">
+                </a>
+                <div type="button" class="d-block d-md-none" id="vecher-modal-btn" data-toggle="modal"
+                    data-target="#fluidModalLeftInfoDemo"><i class="fa-solid fa-bars"></i></div>
+
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+                <div class="collapse navbar-collapse d-md-block" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mx-auto nav-underline nav-tabs">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link header-text-font " id="nav-profile-tab" data-toggle="tab"
+                                data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">Алматы</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link header-text-font " id="nav-profile-tab" data-toggle="tab"
+                                data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">Экономика</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link header-text-font " id="nav-contact-tab" data-toggle="tab"
+                                data-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">Политика</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link header-text-font " id="nav-contact-tab" data-toggle="tab"
+                                data-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">Культура</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link header-text-font " id="nav-contact-tab" data-toggle="tab"
+                                data-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">Эксклюзив</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link header-text-font " id="nav-contact-tab" data-toggle="tab"
+                                data-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">Районы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link header-text-font " id="nav-contact-tab" data-toggle="tab"
+                                data-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">Мир</a>
+                        </li>
+
+                    </ul>
+                    <div class="vercher-hr-2 d-md-none d-lg-block vecher-nav-plnchet"></div>
+                    <div class="exchange-rate d-flex d-md-none d-lg-flex vecher-nav-plnchet">
+                        <div class="d-flex px-1">
+                            <span class="vercher-rate">$</span>
+                            <span class="pl-1 nav-text header-text-font">443.85</span>
+                        </div>
+                        <div class="d-flex px-1">
+                            <span class="vercher-rate">€</span>
+                            <span class="pl-1 nav-text header-text-font">443.85</span>
+                        </div>
+                        <div class="d-flex px-1 ">
+                            <span class="vercher-rate">₽</span>
+                            <span class="pl-1 nav-text header-text-font">443.85</span>
+                        </div>
+                    </div>
+
+                    <div class="vercher-hr d-none vecher-plnchet"></div>
+                    <div class="vercher-weather">
+                        <span class="nav-text header-text-font">Алматы</span>
+                        <span class="nav-text header-text-font">17.3°</span>
+                    </div>
+                    <ul class="navbar-nav d-md-none d-lg-block vecher-nav-plnchet">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle header-text-font d-block pr-0" href="#" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                Еще
+                            </a>
+                            <div class="dropdown-menu">
+
+                                <a class="dropdown-item" href="#"> <i
+                                        class="fa-solid fa-check pr-1 vercher-nav-check d-none"></i>Астана
+                                    0.9°</a>
+                                <a class="dropdown-item" href="#"> <i
+                                        class="fa-solid fa-check vercher-nav-check pr-1 d-none"></i>Шымкент
+                                    20.1° </a>
+                                <a class="dropdown-item" href="#"> <i
+                                        class="fa-solid fa-check vercher-nav-check pr-1 d-none"></i>Актау
+                                    13.6°</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+        <main class="vecher-kz">
+            <div class="container">
+                <div class="row fulltext">
+                    <div class="col-12 col-lg-8 mr-lg-5 ">
+                        <!-- big-card -->
+                        <!-- nav-tab -->
+                        <ul class="fulltext-nav-tab pl-0">
+                            <li class="tab-hr"><a href="" class=" d-block ">Главная</a></li>
+                            <li class="tab-hr"><a href="" class="d-block ">Алматы</a></li>
+                            <li class=""><a href="" class="d-block active">Общество</a></li>
+                        </ul>
+                        <!-- wolcome title -->
+                        <h1 class="fulltext-h1 my-lg-4">
+                            Более миллиона казахстанцев приняли участие в акции «Таза Қазақстан»
+                        </h1>
+                        <!-- nav li -->
+                        <ul class="fulltext-nav-tab fulltext-nav-bread pl-0 ">
+                            <li class="tab-hr">
+                                <span class="d-flex">Автор материала<a href=""
+                                        class=" d-block fulltext-nav-bread-a pl-1">Vecher.kz</a> </span>
+
+                            </li>
+                            <li class=""><span class="d-block fulltext-nav-bread-a">воскресенье, 28 апреля 2024 г.,
+                                    16:02</span></li>
+
+                        </ul>
+                        <h3 class="fulltext-h3 my-lg-3">Завершилась ее третья неделя, сообщает Vecher.kz.</h3>
+                        <img src="image/fulltext1.jpeg" class="fulltext-img" alt="">
+
+                        <span class="img-copyright">Источник фото: gov.kz</span>
+                        <div class="article-content">
+                            <div class="news__content xl-mt-20 xl-mb-20" style="height: auto !important;">
+                                <p>В городе Алматы <a
+                                        href="https://www.gov.kz/memleket/entities/anticorruption/press/news/details/760653?lang=ru"
+                                        target="_blank">состоялось</a>
+                                    выездное заседание Общественного совета Агентства Республики Казахстан по
+                                    противодействию коррупции.<br>
+                                    <br>
+                                    В мероприятии приняли участие Председатель Агентства Асхат Жұмағали, аким города
+                                    Алматы
+                                    Ерболат Досаев, руководящий состав Министерств промышленности и строительства,
+                                    сельского
+                                    хозяйства, по чрезвычайным ситуациям, водных ресурсов, экологии, здравоохранения и
+                                    другие.<br>
+                                    <br>
+                                    Модератором мероприятия выступил депутат Мажилиса Парламента, Председатель
+                                    Общественного
+                                    совета Марат Башимов.<br>
+                                    <br>
+                                    На повестке дня рассмотрен вопрос реализации рекомендаций по итогам внешнего анализа
+                                    коррупционных рисков в сфере строительства в предгорной зоне г. Алматы, проведенного
+                                    Агентством совместно с акиматом в 2023 году.<br>
+                                    <br>
+                                    В вступительном слове Председатель Агентства напомнил о ключевых коррупционных
+                                    рисках,
+                                    выявленных по итогам анализа и подчеркнул, что их исполнение находится на особом
+                                    контроле.
+                                </p>
+                                <p>
+                                    <img src="image/fulltext2.jpeg" alt="">
+                                </p>
+
+                                <blockquote>
+                                    <p><em>«Как вы знаете, Главой государства уделяется особое внимание развитию города
+                                            Алматы, созданию комфортной городской среды южной столицы. Президентом
+                                            страны
+                                            неоднократно указывалось на необходимость исключения практики точечной
+                                            застройки
+                                            города, а при строительстве – в обязательном порядке учитывать интересы его
+                                            жителей»,&nbsp;</em>- подчеркнул Глава Антикора.</p>
+                                </blockquote>
+
+                                <p>В этой связи, в ходе заседания особое внимание уделено качеству и своевременности
+                                    исполнения рекомендаций со стороны ответственных исполнителей, исключению
+                                    формализма.<br>
+                                    <br>
+                                    В рамках мероприятия докладчиками озвучены результаты проведенной работы.<br>
+                                    <br>
+                                    Так, разработан и утвержден новый Генеральный план города Алматы, где учтены
+                                    территории,
+                                    подверженные чрезвычайным ситуациям природного характера.<br>
+                                    <br>
+                                    Из жилой зоны в рекреационную возвращены 229 га земли, передан в госсобственность
+                                    земельный участок с сибиреязвенным захоронением, проведена инвентаризация всех
+                                    водных
+                                    объектов.<br>
+                                    <br>
+                                    По выявленным в предгорных зонах 54 незаконным объектам состоялись 36 судебных актов
+                                    в
+                                    пользу государства, 30 из них вступили в законную силу, 2 незаконных объекта уже
+                                    снесены, еще 3 ждут сноса.<br>
+                                    <br>
+                                    Кроме того, в Мажилисе Парламента на рассмотрении находятся ряд законопроектов, где
+                                    учтены рекомендации Агентства касательно усиления ответственности ГАСК, наделения
+                                    МЧС
+                                    полномочиями по согласованию градостроительных проектов, регламентации отдельных
+                                    строительных понятий и др.<br>
+                                    <br>
+                                    В заключении Председатель Агентства отметил важность рассмотренного вопроса,
+                                    который, в
+                                    первую очередь, касается безопасности жителей мегаполиса.
+                                </p>
+                                <!-- advertise -->
+                                <div class="google-auto-placed ap_container"
+                                    style="width: 100%; height: auto; clear: both; text-align: center;"><ins
+                                        data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate"
+                                        data-ad-client="ca-pub-8570524294227662" data-adsbygoogle-status="done"
+                                        style="display: block; margin: auto; background-color: transparent; height: 280px;"
+                                        data-ad-status="filled">
+                                        <div id="aswift_1_host">
+
+                                        </div>
+                                    </ins></div>
+
+                                <blockquote>
+                                    <p><em>«Эта площадка выбрана не случайно, поскольку обсуждаемый вопрос постоянно
+                                            поднимается общественностью города и волнует каждого его жителя, что требует
+                                            информирования населения о проводимой государством работе в этом
+                                            направлении»,</em>&nbsp;- подчеркнул глава Антикора.</p>
+                                </blockquote>
+
+                                <p>В завершение мероприятия ответственным исполнителям даны конкретные рекомендации по
+                                    принятию исчерпывающих мер для завершения запланированных мероприятий в кратчайшие
+                                    сроки.</p>
+                            </div>
+                        </div>
+                        <div class="article-tele-link">
+                            <p>Хочешь получать главные новости на свой телефон? Подпишись на наш <a
+                                    href="https://t.me/vecher_kz" target="_blank">Telegram-канал!</a></p>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-3 fulltext-left-card ">
+                        <div class="last-news position-sticky right-bar ">
+                            <!-- title hr -->
+                            <div class="row mb-1 mb-lg-3 mb-md-2">
+                                <div class="col-6 col-md-4 col-lg-8  px-lg-0">
+                                    <h3 class="vecher-welcome-h3 mb-0">
+                                        Последние новости
+                                    </h3>
+                                </div>
+                                <div class="col-6 col-md-8 col-lg-4 pl-lg-0">
+                                    <hr class="vecher-welcome-hr">
+
+                                </div>
+
+                            </div>
+                            <!-- news list -->
+                            <div class="row vercher-news">
+                                <div class="col-2">
+                                    <span class="vecher-news-time">12:03</span>
+                                </div>
+                                <div class="col-10">
+                                    <a href="#" class="vecher-news-text vercher-max-title vecher-a-hover">Токаев принял
+                                        участие
+                                        в городском
+                                        субботнике и посадке
+                                        деревьев</a>
+                                </div>
+                                <div class="col-12">
+                                    <hr class="vecher-news-hr">
+                                </div>
+                                <div class="col-2">
+                                    <span class="vecher-news-time">16:02</span>
+                                </div>
+                                <div class="col-10">
+                                    <a href="#" class="vecher-news-text vercher-max-title vecher-a-hover">«Таза
+                                        Казахстан»:
+                                        в
+                                        Алматы
+                                        знаменитости посадили
+                                        деревья</a>
+                                </div>
+                                <div class="col-12">
+                                    <hr class="vecher-news-hr">
+                                </div>
+                                <div class="col-2">
+                                    <span class="vecher-news-time">15:46</span>
+                                </div>
+                                <div class="col-10">
+                                    <a href="#" class="vecher-news-text vercher-max-title vecher-a-hover">«Алматы -
+                                        город-сад»:
+                                        казахстанские
+                                        звезды приняли
+                                        участие в массовой посадке яблонь</a>
+                                </div>
+                                <div class="col-12">
+                                    <hr class="vecher-news-hr">
+                                </div>
+                                <div class="col-2">
+                                    <span class="vecher-news-time">12:03</span>
+                                </div>
+                                <div class="col-10">
+                                    <a href="#" class="vecher-news-text vercher-max-title vecher-a-hover">Токаев принял
+                                        участие
+                                        в городском
+                                        субботнике и посадке
+                                        деревьев</a>
+                                </div>
+                                <div class="col-12">
+                                    <hr class="vecher-news-hr">
+                                </div>
+                                <div class="col-2">
+                                    <span class="vecher-news-time">12:03</span>
+                                </div>
+                                <div class="col-10">
+                                    <a href="#" class="vecher-news-text vercher-max-title vecher-a-hover">Токаев принял
+                                        участие
+                                        в городском
+                                        субботнике и посадке
+                                        деревьев</a>
+                                </div>
+                                <div class="col-12">
+                                    <hr class="vecher-news-hr">
+                                </div>
+                                <div class="col-2">
+                                    <span class="vecher-news-time">12:03</span>
+                                </div>
+                                <div class="col-10">
+                                    <a href="#" class="vecher-news-text vercher-max-title vecher-a-hover">Токаев принял
+                                        участие
+                                        в городском
+                                        субботнике и посадке
+                                        деревьев</a>
+                                </div>
+                                <div class="col-12 ">
+                                    <a href="" class="vecher-news-btn">
+                                        <span class="vecher-news-btn-text">Все новости</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <footer class="vecher-kz mt-3 mt-md-4 mt-lg-5 ">
+        <div class="container-fulid footer-fulid">
+            <div class="container mb-0">
+                <div class="row vecher-footer">
+                    <div class="col-12 d-none d-md-block mb-3 mt-md-4 mt-lg-5 w-100">
+                        <form class=" vecher-form-search" method="POST">
+                            <input type="text" class="w-100 vecher-input-search"
+                                placeholder="Ничего не нашли? Поищите здесь">
+                            <button class="vecher-search-btn">Поиск</button>
+
+                        </form>
+                    </div>
+                    <div class="col-4 d-none d-lg-block py-3">
+                        <img src="image/vercherlight.svg" alt="">
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6  d-flex justify-content-between py-3">
+                        <div class="vercher-footer-face">
+                            <a href="https://www.facebook.com/Вечерний-Алматы-102945598508063" target="_blank">
+                                <i class="fa-brands fa-facebook-f fa-xl" style="color: #ffffff;"></i>
+                            </a>
+
+                        </div>
+                        <div class="vercher-footer-ins">
+                            <a href="https://www.instagram.com/vecher.official/" target="_blank">
+                                <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+                            </a>
+
+                        </div>
+                        <div class="vercher-footer-twit">
+                            <a href="https://twitter.com/vecher_kz" target="_blank">
+                                <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+                            </a>
+
+                        </div>
+                        <div class="vercher-footer-tele">
+                            <a href="https://t.me/vecher_kz" target="_blank">
+                                <i class="fa-solid fa-paper-plane fa-xl" style="color: #ffffff;"></i>
+                            </a>
+
+                        </div>
+                        <div class="vercher-footer-yout">
+                            <a href="https://youtube.com/channel/UC02TxG1AeAfAg2Qb8o5fWIQ" target="_blank">
+                                <i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6 vecher-footer-app py-3">
+                        <a href="" class="pr-1 d-block"><img src="image/appstore.svg" alt=""></a>
+                        <a href="" class="d-block"><img src="image/googleplay.svg" alt=""></a>
+                    </div>
+                    <div class="col-12">
+                        <hr class="vecher-footer-hr">
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <a href="tel:+7 (727) 293 08 03" class="d-block vecher-footer-contact vecher-a-hover">+7
+                                    (727) 293 08
+                                    03</a>
+                                <span class="vecher-footer-name ">Генеральный
+                                    директор</span>
+                            </div>
+                            <div class="col-md-4 col-12 vecher-emal-md-center">
+                                <div class="text-left">
+                                    <a href="mailto:alatauaqparat@gmail.com"
+                                        class="d-block vecher-footer-contact vecher-a-hover">
+                                        alatauaqparat@gmail.com</a>
+                                    <span class="vecher-footer-name text-left">Для обращений</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 vecher-emal-md-end ">
+                                <div class="text-left">
+                                    <a href="mailto:alatauaqparat@gmail.com"
+                                        class="d-block vecher-footer-contact vecher-a-hover">
+                                        alatauaqparat@gmail.com</a>
+                                    <span class="vecher-footer-name">Для сотрудничества</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <hr class="vecher-footer-hr">
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-2 col-6 mx-auto mb-4">
+                                <h6 class="spacing font-weight-bold vecher-footer-contact">
+                                    <strong>Алматы</strong>
+                                </h6>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Вакансии</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Происшествия</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Мир</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Наука</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Вакансии</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Происшествия</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Мир</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Наука</a>
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-6 mx-auto mb-4">
+                                <h6 class="spacing font-weight-bold vecher-footer-contact">
+                                    <strong>ЗНАЙ НАШИХ</strong>
+                                </h6>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Люди города яблок</a>
+                                </p>
+
+
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-6 mx-auto mb-4">
+                                <h6 class="spacing font-weight-bold vecher-footer-contact">
+                                    <strong>Деловой Алматы</strong>
+                                </h6>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Рынки</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Экономика</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Развлечения</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Финансы</a>
+                                </p>
+
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-6 mx-auto mb-4">
+                                <h6 class="spacing font-weight-bold vecher-footer-contact">
+                                    <strong>Аким</strong>
+                                </h6>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Алатауский район</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Алмалинский район</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Ауэзовский район</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Бостандыкский район</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Турксибский район</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Наурызбайский район </a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Медеуский район</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Жетысуский район </a>
+                                </p>
+
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-6 mx-auto mb-4">
+                                <h6 class="spacing font-weight-bold vecher-footer-contact">
+                                    <strong>Культурный Алматы</strong>
+                                </h6>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Кино и Театр</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Персоны</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Выставки</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Маршрут выходного дня</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Культура</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Ночная жизнь</a>
+                                </p>
+
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-6 mx-auto mb-4">
+                                <h6 class="spacing font-weight-bold vecher-footer-contact">
+                                    <strong>VecherTV</strong>
+                                </h6>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Тесты</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Доброе утро, Алматы!</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Инфографика</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Мобильный репортер</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Аудио</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Опросы</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="vecher-footer-name vecher-a-hover">Видео</a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <hr class="vecher-footer-hr">
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-7">
+                                <span class="vecher-footer-name">
+                                    Учредителем ТОО «Alataý Aqparat» является КГУ «Управление общественного развития г.
+                                    Алматы»
+                                    Регистрационное свидетельство № KZ53VPY00026041 от 19.08.2020 г.
+                                    Выдано Министерством информации и общественного развития Республики Казахстан.
+                                </span>
+                            </div>
+                            <div class="col-5 text-right">
+                                <span class="vecher-footer-name">Республика Казахстан. 050022, г. Алматы, Адрес: ул.
+                                    Шевченко, 106а
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row my-md-4 my-3">
+                            <div class="col-12 col-lg-4">
+                                <span class="vecher-footer-name">
+                                    © Газета "Вечерний алматы" 1968-2024 г.
+                                </span>
+                            </div>
+                            <div class="col-12 col-lg-8 d-none d-lg-block">
+                                <ul class="vercher-footer-tab d-flex px-0" style="list-style: none;">
+
+                                    <li>
+                                        <a href="" class="vecher-footer-name vecher-a-hover px-1 d-block">O нас</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="vecher-footer-name vecher-a-hover px-1 d-block">Мобильный
+                                            репортер</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="vecher-footer-name vecher-a-hover px-1 d-block">Контакты</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="vecher-footer-name vecher-a-hover px-1 d-block">Политика
+                                            конфиденциальности</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="vecher-footer-name vecher-a-hover px-1 d-block">Реклама</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <hr class="vecher-footer-hr">
+                        <span class="vecher-footer-name">Сайтты жасаған: <a href="https://qar.kz/"
+                                class="vecher-footer-name vecher-a-hover" target="_blank">QAR
+                                IT</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/mian.js"></script>
+</body>
+
+</html>
