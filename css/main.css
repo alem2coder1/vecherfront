@@ -637,6 +637,7 @@ body {
     border: 1px solid #ddd;
     padding: 5px 10px;
     margin-right: 10px;
+    margin-bottom: 8px;
     border-radius: 5px;
 }
 
@@ -646,16 +647,93 @@ body {
     color: #000;
 }
 
-.next-article {
+.vecher-kz .fulltext .next-article {
     display: flex;
     justify-content: space-between;
 }
 
-.next-article .next-article-a {
+.vecher-kz .fulltext .next-article .next-article-a {
     font-size: 18px;
     color: #c1bcbc;
     font-weight: 400;
 }
+
+.vecher-kz .fulltext .next-article-a:hover,
+.vecher-kz .fulltext .next-article-a:hover i {
+    color: #1abc9c !important;
+}
+
+.vecher-kz .fulltext .point-img {
+    background-image: url(/image/nukte.png);
+    height: 50px;
+    background-position: 0 0;
+    background-size: auto;
+    border-bottom: 2px #ddd;
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+/* footernav */
+.footernav .container {
+    margin-bottom: 2px !important;
+}
+
+.cardlist .container {
+    margin-bottom: 2px !important;
+}
+
+.branch-nav {
+    background-color: #f7f7f7;
+    height: 40px;
+}
+
+/* .footernav .vecher-kz .fulltext .article-about{
+    
+} */
+/* cardlist */
+.cardlist .vecher-kz .welcome .cardlist-tag a {
+    color: #818181;
+    font-size: 1rem;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.cardlist .vecher-kz .welcome .cardlist-h1 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #333;
+}
+
+#pagination .light-theme .current,
+#pagination .prev,
+#pagination .next {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+#pagination li.disabled {
+    opacity: 0.6;
+}
+
+#pagination li a,
+#pagination li span {
+    min-width: 48px;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    padding: 0.5rem 0.8rem;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+
+#pagination a:hover {
+    color: #FFF;
+    background-color: #1abc9c;
+}
+
 
 
 
@@ -794,6 +872,33 @@ body {
         font-size: 14px;
         font-weight: 300;
     }
+
+    .vecher-kz .fulltext .next-article .next-article-a {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .vecher-kz .fulltext .point-img {
+        height: 36px;
+    }
+
+    #fluidModalLeftInfoDemo .vecher-xl-input-btn {
+        padding: 5px 20px;
+        margin-top: 0;
+    }
+
+    .cardlist .vecher-kz .welcome .cardlist-h1 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    #pagination li a,
+    #pagination li span {
+        min-width: 28px;
+        padding: 5px 8px;
+        font-size: 12px;
+    }
 }
 
 @media (min-width:767px) and (max-width: 992px) {
@@ -903,6 +1008,18 @@ body {
         font-weight: 350;
     }
 
+    .vecher-kz .fulltext .next-article .next-article-a {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .vecher-kz .fulltext .point-img {
+        height: 40px;
+    }
+
+    .cardlist .vecher-kz .welcome .cardlist-h1 {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 992px) {
