@@ -674,13 +674,10 @@ body {
 }
 
 /* footernav */
-.footernav .container {
-    margin-bottom: 2px !important;
+.container {
+    margin-bottom: 0 !important;
 }
 
-.cardlist .container {
-    margin-bottom: 2px !important;
-}
 
 .branch-nav {
     background-color: #f7f7f7;
@@ -691,14 +688,14 @@ body {
     
 } */
 /* cardlist */
-.cardlist .vecher-kz .welcome .cardlist-tag a {
+.vecher-kz .welcome .cardlist-tag a {
     color: #818181;
     font-size: 1rem;
     margin-right: 20px;
     text-decoration: none;
 }
 
-.cardlist .vecher-kz .welcome .cardlist-h1 {
+.vecher-kz .welcome .cardlist-h1 {
     font-size: 22px;
     font-weight: 500;
     line-height: 130%;
@@ -734,6 +731,49 @@ body {
     background-color: #1abc9c;
 }
 
+.vecher-kz .search .vecher-input-header {
+    background-color: hsla(0, 0%, 100%, .06);
+    border: 2px solid #000;
+    border-radius: 10px;
+    color: #5c5c5c;
+    font-size: 16px;
+    height: 50px;
+    padding-left: 16px;
+    text-indent: 25px;
+    position: relative;
+}
+
+.vecher-kz .search .search-header-btn {
+    position: absolute;
+    right: -2.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background: #5c5c5c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    height: 40px;
+    width: 110px;
+}
+
+.vecher-kz .search .vecher-input-header:focus {
+    border: 2px solid #1abc9c !important;
+    box-shadow: none;
+    outline: 0;
+}
+
+.vecher-kz .search .search-header-btn:hover {
+    background-color: #1abc9c;
+}
+
+.vecher-kz .search .search-header-h1 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #333;
+}
 
 
 
@@ -887,7 +927,7 @@ body {
         margin-top: 0;
     }
 
-    .cardlist .vecher-kz .welcome .cardlist-h1 {
+    .vecher-kz .welcome .cardlist-h1 {
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 0;
@@ -899,6 +939,30 @@ body {
         padding: 5px 8px;
         font-size: 12px;
     }
+
+    .vecher-kz .search .vecher-input-header {
+        border-radius: 8px;
+        font-size: 13px;
+        height: 40px;
+        padding-left: 0;
+        position: relative;
+    }
+
+    .vecher-kz .search .search-header-btn {
+        position: absolute;
+        right: -5%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        background: #5c5c5c;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        font-size: 16px;
+        height: 35px;
+        width: 90px;
+    }
+
 }
 
 @media (min-width:767px) and (max-width: 992px) {
@@ -1017,7 +1081,7 @@ body {
         height: 40px;
     }
 
-    .cardlist .vecher-kz .welcome .cardlist-h1 {
+    .vecher-kz .welcome .cardlist-h1 {
         font-size: 18px;
     }
 }
