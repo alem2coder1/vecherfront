@@ -1,0 +1,106 @@
+  #region Aboutus +AboutUs()
+
+    public IActionResult Aboutus()
+    {
+        var additionalType = ActionName.ToLower();
+        using (var _connection = Utilities.GetOpenConnection())
+        {
+            ViewData["additionalContent"] = AdditionalContent(_connection, additionalType);
+        }
+
+        ViewData["title"] = T("ls_AboutUs");
+
+        ViewData["showFieldList"] = new List<string>()
+        {
+            nameof(Additionalcontent.Title),
+            nameof(Additionalcontent.FullDescription),
+        };
+        return View($"~/Views/Console/QarBase/AdditionalContent.cshtml");
+    }
+
+    #endregion
+
+    #region Contact us +ContactUs()
+
+    public IActionResult Contactus()
+    {
+        var additionalType = ActionName.ToLower();
+        using (var _connection = Utilities.GetOpenConnection())
+        {
+            ViewData["additionalContent"] = AdditionalContent(_connection, additionalType);
+        }
+
+        ViewData["title"] = T("ls_ContactUs");
+
+        ViewData["showFieldList"] = new List<string>()
+        {
+            nameof(Additionalcontent.Title),
+            nameof(Additionalcontent.FullDescription),
+        };
+        return View($"~/Views/Console/QarBase/AdditionalContent.cshtml");
+    }
+
+    #endregion
+    #region Mobilereporter us +Mobilereporter()
+
+    public IActionResult Mobilereporter()
+    {
+        var additionalType = ActionName.ToLower();
+        using (var _connection = Utilities.GetOpenConnection())
+        {
+            ViewData["additionalContent"] = AdditionalContent(_connection, additionalType);
+        }
+
+        ViewData["title"] = T("ls_Mobilereporter");
+
+        ViewData["showFieldList"] = new List<string>()
+        {
+            nameof(Additionalcontent.Title),
+            nameof(Additionalcontent.FullDescription),
+        };
+        return View($"~/Views/Console/QarBase/AdditionalContent.cshtml");
+    }
+
+    #endregion
+    #region ContAdvertiseact us +Advertise()
+
+    public IActionResult Advertise()
+    {
+        var additionalType = ActionName.ToLower();
+        using (var _connection = Utilities.GetOpenConnection())
+        {
+            ViewData["additionalContent"] = AdditionalContent(_connection, additionalType);
+        }
+
+        ViewData["title"] = T("ls_Advertise");
+
+        ViewData["showFieldList"] = new List<string>()
+        {
+            nameof(Additionalcontent.Title),
+            nameof(Additionalcontent.FullDescription),
+        };
+        return View($"~/Views/Console/QarBase/AdditionalContent.cshtml");
+    }
+
+    #endregion
+    #region Privacypolicy us +Privacypolicy()
+
+    public IActionResult Privacypolicy()
+    {
+        var additionalType = ActionName.ToLower();
+        using (var _connection = Utilities.GetOpenConnection())
+        {
+            ViewData["additionalContent"] = AdditionalContent(_connection, additionalType);
+        }
+
+        ViewData["title"] = T("ls_Privacypolicy");
+
+        ViewData["showFieldList"] = new List<string>()
+        {
+            nameof(Additionalcontent.Title),
+            nameof(Additionalcontent.FullDescription),
+        };
+        return View($"~/Views/Console/QarBase/AdditionalContent.cshtml");
+    }
+
+    #endregion

@@ -40,28 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
             icon.classList.toggle("fa-solid");
         }
     });
-    let tagSwiper = null;
-    const initTagSwiper = function () {
-        if (this.window.outerWidth < 992) {
-            tagSwiper = new Swiper(".partner-swiper", {
-                slidesPerView: 3,
-                spaceBetween: 32,
-                freeMode: true,
-            });
-        } else {
-            tagSwiper = new Swiper(".partner-swiper", {
-                slidesPerView: 10,
-                spaceBetween: 20,
-                freeMode: true,
-            });
-        }
-    };
-    window.addEventListener("resize", function () {
-        initTagSwiper();
-    }
 
-    );
-    initTagSwiper();
+
+
+
+
 
     window.addEventListener('scroll', function () {
         var footer = document.querySelector('footer');
@@ -77,20 +60,64 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
-});
-$(function () {
-    $("#pagination").pagination({
-        items: 43,
-        itemsOnPage: 3,
-        currentPage: 1,
-        displayedPages: 3,
-        prevText: 'Назад',
-        nextText: 'Вперед',
-        displayedPages: $(window).width() < 768 ? 1 : 3,
-        onPageClick: function (pageNumber, event) {
-            //  // @* window.location.href = "/@language/article/list?@Html.Raw(catagoryId > 0 ? $"cId = { catagoryId } & " : "")@Html.Raw(tagId > 0 ? $"tagId = { tagId } & " : "")@Html.Raw(!string.IsNullOrEmpty(keyWord) ? $"keyWord = { keyWord } & " : "")page=" + pageNumber; * @
+    const vecherQstForm = document.querySelector("form#vecherqst");
+    const submitButton = vecherQstForm.querySelector(".vecher-question-btn");
+    const formCheckInputs = vecherQstForm.querySelectorAll(".form-check-input");
+
+    vecherQstForm.addEventListener("submit", (event) => {
+        event.preventDefault(); // 防止默认表单提交
+
+        // 禁用按钮
+        submitButton.disabled = true;
+
+        // 获取选中的input
+        const selectedInput = vecherQstForm.querySelector(".form-check-input:checked");
+
+        if (selectedInput) {
+            // 隐藏所有的 vecher-qst-progress
+            const allProgressDivs = vecherQstForm.querySelectorAll(".vecher-qst-progress");
+            allProgressDivs.forEach(div => div.classList.add("d-none"));
+
+            // 准备数据
+            const formData = new FormData();
+            formData.append(selectedInput.name, selectedInput.value);
+
+            // 发送请求到后端
+            fetch("YOUR_BACKEND_ENDPOINT", {
+                method: "POST",
+                body: formData
+            })
+                .then(response => response.text()) // 获取原始文本响应
+                .then(text => {
+                    try {
+                        const data = JSON.parse(text); // 尝试解析为 JSON
+                        console.log("Parsed JSON:", data); // 输出解析后的 JSON 数据
+
+                        // 更新前端
+                        data.forEach(item => {
+                            const progressDiv = vecherQstForm.querySelector(`#${item.id}`).closest('li').querySelector('.vecher-qst-progress');
+                            progressDiv.classList.remove("d-none");
+                            progressDiv.querySelector(".card-text").innerText = item.count;
+                            progressDiv.querySelector(".progress-bar").style.width = `${item.percentage}%`;
+                        });
+                    } catch (error) {
+                        console.error("Error parsing JSON:", error);
+                        console.log("Received text:", text); // 输出原始文本以便调试
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                })
+                .finally(() => {
+                    // 重新启用按钮
+                    submitButton.disabled = false;
+                });
+        } else {
+            // 没有选中的input时重新启用按钮
+            submitButton.disabled = false;
         }
     });
 });
+
 
 
